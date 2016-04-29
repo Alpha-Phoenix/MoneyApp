@@ -1,0 +1,13 @@
+.container {
+  margin-top: 30px;
+}
+
+.tool-info {
+  height: 220px;
+  text-align: justify;
+}
+
+.tool-info .btn {
+  position: absolute;
+  bottom: 0px;
+}

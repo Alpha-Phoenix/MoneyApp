@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="/img/favicon.ico">
+
+  <title>MoneyApp</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="frameworks/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="/css/bootstrap-social.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link href="/css/main.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <script src="/frameworks/jquery/jquery-2.1.4.min.js"></script>
+  <script src="/frameworks/bootstrap/js/bootstrap.min.js"></script>
+
+  {% block heads %} {% endblock %}
+
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{ urls['home'] }}">MoneyApp</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Sobre Nós</a></li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Procurando algo?" required>
+        </div>
+        <button type="submit" class="btn btn-default">Pesquisar</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right" style="margin-right: 10px;">
+        <li><a href="#">Cadastrar</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Acesso<b class="caret"></b></a>
+          <ul class="dropdown-menu" style="padding: 15px;min-width: 250px;">
+            <li>
+              <div class="row">
+                <div class="col-md-12">
+                  <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                    <div class="form-group">
+                      <label class="sr-only" for="mailInput">Email</label>
+                      <input type="email" class="form-control" id="mailInput" placeholder="E-Mail" required>
+                    </div>
+                    <div class="form-group">
+                      <label class="sr-only" for="pwdInput">Senha</label>
+                      <input type="password" class="form-control" id="pwdInput" placeholder="Senha" required>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Lembrar
+                      </label>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-success btn-block">Entrar</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <div class="row">
+                <div class="col-md-12">
+                  <a class="btn btn-block btn-social btn-facebook">
+                    <span class="fa fa-facebook"></span> Login com Facebook
+                  </a>
+                  <a class="btn btn-block btn-social btn-twitter">
+                    <span class="fa fa-twitter"></span> Login com Twitter
+                  </a>
+                  <a class="btn btn-block btn-social btn-google">
+                    <span class="fa fa-google"></span> Login com Google+
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </nav>
+
+
+
+
+
+
+
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Olá, seja bem-vindo(a)!</h1>
+      <p>O MoneyApp é um aplicativo que o auxiliará a manter suas finanças em dia.</p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Saiba mais &raquo;</a></p>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-4 tool-info">
+        <h2>Controle os seus gastos</h2>
+        <p>Você pode criar uma lista de créditos e débitos periódicos para saber a sua renda ao fim do dia, semana ou mês.</p>
+        <p><a class="btn btn-default" href="#" role="button">Detalhes &raquo;</a></p>
+      </div>
+      <div class="col-md-4 tool-info">
+        <h2>Faça previsões</h2>
+        <p>Com o nosso sistema de créditos e débitos é possível prever sua renda futura a partir informações pré-processadas. Dessa forma
+        fica muito mais fácil saber qual será sua futura situação financeira.</p>
+        <p><a class="btn btn-default" href="#" role="button">Detalhes &raquo;</a></p>
+      </div>
+      <div class="col-md-4 tool-info">
+        <h2>Fique informado</h2>
+        <p>Nós enviaremos notificões sempre que seu crédito ficar baixo. Assim você evita que seu saldo fique negativo.</p>
+        <p><a class="btn btn-default" href="#" role="button">Detalhes &raquo;</a></p>
+      </div>
+    </div>
+
+    <hr>
+
+    <footer>
+      <p>&copy; 2015 Company, Inc.</p>
+    </footer>
+  </div>
+  <!-- /container -->
+
+</body>
+
+</html>
