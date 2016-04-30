@@ -5,9 +5,9 @@ import os
 import jinja2
 import webapp2
 
-template_dir = os.path.join(os.path.dirname(__file__), 'templates')
-jinja_env = jinja2.Environment(
-    loader = jinja2.FileSystemLoader(template_dir),
+TEMPLATE_DIR = os.path.join(os.path.dirname(__file__), 'templates')
+JINJA_ENV = jinja2.Environment(
+    loader = jinja2.FileSystemLoader(TEMPLATE_DIR),
     autoescape = True)
 
 URLS = {
@@ -19,7 +19,7 @@ TEMPLATES = {
 }
 
 def render_str(template, **params):
-    t = jinja_env.get_template(template)
+    t = JINJA_ENV.get_template(template)
     return t.render(params)
 
 class OutputHandler(webapp2.RequestHandler):
