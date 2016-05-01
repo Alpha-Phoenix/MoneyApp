@@ -55,12 +55,23 @@
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Procurando algo?" required>
         </div>
-        <button type="submit" class="btn btn-default">Pesquisar</button>
+        <button type="submit" class="btn btn-default">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
       </form>
       <ul class="nav navbar-nav navbar-right" style="margin-right: 10px;">
-        <li><a href="#">Cadastrar</a></li>
+        <li>
+          <a href="#">
+            <i class="fa fa-sign-in" aria-hidden="true"></i>
+            Cadastrar
+          </a>
+        </li>
+        <!-- Menu de acesso -->
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Acesso<b class="caret"></b></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            Acesso<b class="caret"></b>
+          </a>
           <ul class="dropdown-menu" style="padding: 15px;min-width: 250px;">
             <li>
               <div class="row">
@@ -68,7 +79,7 @@
                   <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
                     <div class="form-group">
                       <label class="sr-only" for="mailInput">Email</label>
-                      <input type="email" class="form-control" id="mailInput" placeholder="E-Mail" required>
+                      <input type="email" class="form-control" id="mailInput" placeholder="Email" required>
                     </div>
                     <div class="form-group">
                       <label class="sr-only" for="pwdInput">Senha</label>
@@ -104,54 +115,60 @@
             </li>
           </ul>
         </li>
+        <!-- Fim do menu de acesso -->
       </ul>
     </div>
     <!-- /.navbar-collapse -->
   </nav>
 
+  <nav class="navbar navbar-default" id="sidebar">
+    <ul class="nav navbar-nav">
+      <li><a href="#">Novidades</a></li><hr>
+      <li><a href="#">Downloads</a></li><hr>
+      <li><a href="#">Exemplos</a></li><hr>
+      <li><a href="#">Feedbacks</a></li>
+    </ul>
+  </nav>
 
-
-
-
-
-
-  <div class="jumbotron">
-    <div class="container">
-      <h1>Olá, seja bem-vindo(a)!</h1>
-      <p>O MoneyApp é um aplicativo que o auxiliará a manter suas finanças em dia.</p>
-      <p><a class="btn btn-primary btn-lg" href="#" role="button">Saiba mais &raquo;</a></p>
-    </div>
-  </div>
-
-  <div class="container">
-    <!-- Example row of columns -->
-    <div class="row">
-      <div class="col-md-4 tool-info">
-        <h2>Controle os seus gastos</h2>
-        <p>Você pode criar uma lista de créditos e débitos periódicos para saber a sua renda ao fim do dia, semana ou mês.</p>
-        <p><a class="btn btn-default" href="#" role="button">Detalhes &raquo;</a></p>
-      </div>
-      <div class="col-md-4 tool-info">
-        <h2>Faça previsões</h2>
-        <p>Com o nosso sistema de créditos e débitos é possível prever sua renda futura a partir informações pré-processadas. Dessa forma
-        fica muito mais fácil saber qual será sua futura situação financeira.</p>
-        <p><a class="btn btn-default" href="#" role="button">Detalhes &raquo;</a></p>
-      </div>
-      <div class="col-md-4 tool-info">
-        <h2>Fique informado</h2>
-        <p>Nós enviaremos notificões sempre que seu crédito ficar baixo. Assim você evita que seu saldo fique negativo.</p>
-        <p><a class="btn btn-default" href="#" role="button">Detalhes &raquo;</a></p>
+  <div id="main">
+    <div class="jumbotron">
+      <div class="container-fluid">
+        <h1>Olá, seja bem-vindo(a)!</h1>
+        <p>O MoneyApp é um aplicativo que o auxiliará a manter suas finanças em dia.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Saiba mais &raquo;</a></p>
       </div>
     </div>
 
-    <hr>
+    <div class="container-fluid">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4 tool-info">
+          <h2>Controle os seus gastos</h2>
+          <p>Você pode criar uma lista de créditos e débitos periódicos para saber a sua renda ao fim do dia, semana ou mês.</p>
+          <p><a class="btn btn-default" href="#" role="button">Detalhes &raquo;</a></p>
+        </div>
+        <div class="col-md-4 tool-info">
+          <h2>Faça previsões</h2>
+          <p>Com o nosso sistema de créditos e débitos é possível prever sua renda futura a partir informações pré-processadas. Dessa forma
+          fica muito mais fácil saber qual será sua futura situação financeira.</p>
+          <p><a class="btn btn-default" href="#" role="button">Detalhes &raquo;</a></p>
+        </div>
+        <div class="col-md-4 tool-info">
+          <h2>Fique informado</h2>
+          <p>Nós enviaremos notificões sempre que seu crédito ficar baixo. Assim você evita que seu saldo fique negativo.</p>
+          <p><a class="btn btn-default" href="#" role="button">Detalhes &raquo;</a></p>
+        </div>
+      </div>
 
-    <footer>
-      <p>&copy; 2015 Company, Inc.</p>
-    </footer>
+      <hr>
+
+      <footer>
+        <p>&copy; 2015 Company, Inc.</p>
+      </footer>
+    </div>
+    <!-- /container -->
+
   </div>
-  <!-- /container -->
-
 </body>
 
 </html>
