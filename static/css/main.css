@@ -1,5 +1,13 @@
-.container {
-  margin-top: 30px;
+.container-fluid {
+  margin-top: 50px;
+  margin-left: 0;
+}
+
+#main .jumbotron {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+  text-align: center;
 }
 
 .tool-info {
@@ -10,4 +18,34 @@
 .tool-info .btn {
   position: absolute;
   bottom: 0px;
+}
+
+#sidebar li {
+  float: none;
+}
+
+#sidebar hr {
+  margin: 0;
+}
+
+#sidebar a {
+  display: inline-block;
+}
+
+#sidebar ul {
+  float: none;
+}
+
+#sidebar {
+  position: fixed;
+  left: 0px;
+  top: 50px;
+  width: 150px;
+  height: 100%;
+  text-align: center;
+}
+
+#main {
+  position: absolute;
+  left: 150px;
 }
